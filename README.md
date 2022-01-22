@@ -96,49 +96,46 @@ Publish the website in the given URL.
             <script type="text/javascript">
               function myClickevent(e){
                   var message;
-               ctx.beginPath();
-               if (shape==0){
-               ctx.arc(e.offsetX,e.offsetY, 80, 0, 2 * Math.PI);
-                ctx.strokeStyle ="#0000FF";
-                ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    if (shape==0){
+                    ctx.arc(e.offsetX,e.offsetY, 80, 0, 2 * Math.PI);
+                    ctx.strokeStyle ="#0000FF";
+                    ctx.lineWidth = 3;
                           }else if (shape==1){
                     ctx.rect(e.offsetX,e.offsetY, 120,120);
                     ctx.strokeStyle ="#FF0000";
                     ctx.lineWidth = 3;
-                  }else if (shape==2){
+                    }else if (shape==2){
                     ctx.rect(e.offsetX,e.offsetY, 400,200);
                     ctx.strokeStyle = "#B929F7";
                     ctx.lineWidth = 3;
                               }else if (shape==3){
-                ctx.moveTo(e.offsetX,e.offsetY);
-                ctx.lineTo(e.offsetX,40);
-                
-                ctx.fill();
-                ctx.strokeStyle = "#239F31";
-                ctx.lineWidth = 3;    
-                }    else if (shape==4){
-                  
-                  
-                ctx.moveTo(e.offsetX,e.offsetY);
-                ctx.lineTo(e.offsetX,50);
-                ctx.lineTo(50,e.offsetY);
-                ctx.closePath();
-                //ctx.lineTo(e.offsetX,e.offsetY);
-                //ctx.lineTo(e.offsetX,e.offsetX);
-                ctx.strokeStyle = "#FF00C8";
-                ctx.lineWidth = 3;
-                }       else if (shape==5){
-                  ctx.fillStyle ="white";
-                      ctx.fillRect(0,0,1000,600);
+                    ctx.moveTo(e.offsetX,e.offsetY);
+                    ctx.lineTo(e.offsetX,40);
                     
-                   
+                    ctx.fill();
+                    ctx.strokeStyle = "#239F31";
+                    ctx.lineWidth = 3;    
+                    }    else if (shape==4){
+                    
+                    
+                    ctx.moveTo(e.offsetX,e.offsetY);
+                    ctx.lineTo(e.offsetX,50);
+                    ctx.lineTo(50,e.offsetY);
+                    ctx.closePath();
+                    //ctx.lineTo(e.offsetX,e.offsetY);
+                    //ctx.lineTo(e.offsetX,e.offsetX);
+                    ctx.strokeStyle = "#FF00C8";
+                    ctx.lineWidth = 3;
+                }   else if (shape==5){
+                    ctx.fillStyle ="white";
+                    ctx.fillRect(0,0,1000,600);                 
                   } else if (shape==6){
-               ctx.arc(e.offsetX,e.offsetY, 70, 0, 2 * Math.PI);
-               ctx.fillStyle ="#0000FF";
-               ctx.fill()
-               
-              }
-              else if (shape==7){
+                    ctx.arc(e.offsetX,e.offsetY, 70, 0, 2 * Math.PI);
+                    ctx.fillStyle ="#0000FF";
+                    ctx.fill()
+                    
+                    }else if (shape==7){
                     ctx.rect(e.offsetX,e.offsetY, 120,120);
                     ctx.fillStyle ="#FF0000";
                     ctx.fill()
